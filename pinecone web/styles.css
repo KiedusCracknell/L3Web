@@ -1,15 +1,21 @@
 body {
-    background-color: green;
-  }
+  background-image: url(background2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
 nav {
-    background-color: #333;
+    background-color: black;
     color: #fff;
+    opacity: 80%;
+    border: 1px solid white;
+    
   }
   
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
   }
   
 li {
@@ -26,5 +32,45 @@ a  {
   
 a:hover {
     text-decoration: underline; /* Underline on hover */
-    background-color: #555;
+    color: blue;
+    background-color: black;
   }
+  .grid-container {
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    opacity: 80%;
+    
+  }
+  .grid-item {
+    
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    
+  }
+  .pinemain1{
+    max-width:100%;
+    height: auto;
+  }
+  .moving-text-container {
+    overflow: hidden;
+  }
+  
+  .moving-text {
+    animation: moveText 8s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+ 

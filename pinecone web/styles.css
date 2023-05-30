@@ -1,8 +1,11 @@
 body {
-  background-image: url(background2.png);
+  background-image: url(images/background2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 nav {
     background-color: black;
@@ -41,9 +44,26 @@ a:hover {
     grid-template-columns: auto auto auto;
     background-color: black;
     opacity: 80%;
+  }
+  .grid-container2 {
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    opacity: 80%;
+  }
+
+
+  .grid-item {
+    
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
     
   }
-  .grid-item {
+  .grid-item2 {
     
     border: 1px solid white;
     padding: 20px;

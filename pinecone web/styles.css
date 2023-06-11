@@ -3,12 +3,13 @@
   src: url('fonts/newfont.otf');
   font-weight: normal;
   font-style: normal;
+  
 }
 
 
 
 body {
-  background-image: url(images/background2.png);
+  background-image: url(images/background4.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +17,20 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'CustomFont', sans-serif;
+  font-size: 20px;
 
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 nav {
@@ -50,15 +64,16 @@ a {
 a:hover {
   text-decoration: underline;
   /* Underline on hover */
-  color: blue;
+  color: brown;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .grid-container {
   display: grid;
   margin-top: 5px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
+  
 
 }
 
@@ -69,13 +84,20 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 
 }
+.grid-container3 {
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
 
 
 .grid-item {
 
   border: 1px solid white;
   padding: 20px;
-  font-size: 30px;
+  
   text-align: center;
   color: #fff;
 
@@ -85,17 +107,23 @@ a:hover {
 
   border: 1px solid white;
   padding: 20px;
-  font-size: 30px;
+  
+  text-align: center;
+  color: #fff;
+
+
+}
+.grid-item3 {
+
+  border: 1px solid white;
+  padding: 20px;
+ 
   text-align: center;
   color: #fff;
 
 
 }
 
-.pinemain1 {
-  max-width: 100%;
-  height: auto;
-}
 
 .moving-text-container {
   overflow: hidden;
@@ -115,8 +143,6 @@ a:hover {
     transform: translateX(-100%);
   }
 }
-
-
 .ethan {
   border: 1px solid white;
   max-width: 100%;
@@ -126,8 +152,19 @@ a:hover {
 p {
   font-size: auto, 20px;
 }
-.rotate-image {
-  width: 200px;
-  height: 200px;
-  transition: transform 0.5s ease;
+.product1{
+  max-width: 100%;
+  height: auto;
+}
+.watermark {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0.5;
+  max-width: 120px;
+}
+@media (max-width: 60px) {
+  .watermark {
+    max-width: 20%;
+  }
 }

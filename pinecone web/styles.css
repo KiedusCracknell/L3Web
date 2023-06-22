@@ -1,13 +1,10 @@
-@font-face {
+@font-face {/*Custom font found in fonts folder*/
   font-family: 'CustomFont';
   src: url('fonts/newfont.otf');
   font-weight: normal;
   font-style: normal;
   
 }
-
-
-
 body {
   background-image: url(images/background4.png);
   background-size: cover;
@@ -17,13 +14,13 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'CustomFont', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {/*makes the font size smaller based on what the window size is */
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -65,10 +62,10 @@ a:hover {
   text-decoration: underline;
   /* Underline on hover */
   color: brown;
-  background-color: rgba(0, 0, 0, 0.5);
+  
 }
 
-.grid-container {
+.grid-container-home {
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(3, 1fr);
@@ -77,24 +74,29 @@ a:hover {
 
 }
 
-.grid-container2 {
+.grid-container-contact {
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-.grid-container3 {
+.grid-container-services {
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(1, 1fr 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 
 }
+.grid-container-ethan {
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
-.grid-item {
-
+.grid-home {
   border: 1px solid white;
   padding: 20px;
   
@@ -103,7 +105,7 @@ a:hover {
 
 }
 
-.grid-item2 {
+.grid-contact {
 
   border: 1px solid white;
   padding: 20px;
@@ -113,7 +115,7 @@ a:hover {
 
 
 }
-.grid-item3 {
+.grid-services {
 
   border: 1px solid white;
   padding: 20px;
@@ -122,6 +124,13 @@ a:hover {
   color: #fff;
 
 
+}
+.grid-ethan {
+  border: 1px solid white;
+  padding: 20px;
+ 
+  text-align: center;
+  color: #fff;
 }
 
 
@@ -153,8 +162,14 @@ p {
   font-size: auto, 20px;
 }
 .product1{
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
+  border: 1px solid white;
+}
+.product2{
+  max-width: 40%;
+  height: auto;
+  border: 1px solid white;
 }
 .watermark {
   position: fixed;
@@ -162,9 +177,11 @@ p {
   right: 2%;
   opacity: 0.5;
   max-width: 120px;
+  text-decoration: none;
 }
 @media (max-width: 60px) {
   .watermark {
     max-width: 20%;
   }
 }
+

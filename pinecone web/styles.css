@@ -30,7 +30,7 @@ body {
   }
 }
 
-nav {
+nav {/* nav bar*/
   background-color: black;
   color: #fff;
   opacity: 80%;
@@ -65,7 +65,7 @@ a:hover {
   
 }
 
-.grid-container-home {
+.grid-container-home { /* home page main grid*/ 
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(3, 1fr);
@@ -74,29 +74,40 @@ a:hover {
 
 }
 
-.grid-container-contact {
+.grid-container-contact {/*contact page main grid*/
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-.grid-container-services {
+.grid-container-services {/*services page main grid*/
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(1, 1fr 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-.grid-container-ethan {
+.grid-container-ethan {/*ethan page main grid*/
   display: grid;
   margin-top: 5px;
-  grid-template-columns: repeat(1, 1fr 1fr);
+  grid-template-columns: repeat(1, 1fr );
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.grid-container-about {/*about page main grid*/
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.grid-container-buy{
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: repeat(1, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-.grid-home {
+.grid-home {/*home page sub grid*/
   border: 1px solid white;
   padding: 20px;
   
@@ -105,7 +116,7 @@ a:hover {
 
 }
 
-.grid-contact {
+.grid-contact {/*contact page sub grid*/
 
   border: 1px solid white;
   padding: 20px;
@@ -115,7 +126,7 @@ a:hover {
 
 
 }
-.grid-services {
+.grid-services {/*services page sub grid*/
 
   border: 1px solid white;
   padding: 20px;
@@ -125,7 +136,22 @@ a:hover {
 
 
 }
-.grid-ethan {
+.grid-ethan {/*ethan page sub grid*/
+  border: 1px solid white;
+  padding: 20px;
+ 
+  text-align: center;
+  color: #fff;
+}
+.grid-about {/*about page sub grid*/
+  border: 1px solid white;
+  padding: 20px;
+  
+ 
+  text-align: center;
+  color: #fff;
+}
+.grid-buy{
   border: 1px solid white;
   padding: 20px;
  
@@ -134,7 +160,7 @@ a:hover {
 }
 
 
-.moving-text-container {
+.moving-text-container {/*home page moving text*/
   overflow: hidden;
 }
 
@@ -161,17 +187,17 @@ a:hover {
 p {
   font-size: auto, 20px;
 }
-.product1{
+.product1{/*product on servies page*/
   max-width: 40%;
   height: auto;
   border: 1px solid white;
 }
-.product2{
+.product2{/*product on services page*/
   max-width: 40%;
   height: auto;
   border: 1px solid white;
 }
-.watermark {
+.watermark {/*logo at bottem right side*/
   position: fixed;
   bottom: 2%;
   right: 2%;

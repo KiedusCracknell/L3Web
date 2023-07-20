@@ -15,7 +15,7 @@ body {
   height: 100vh;
   font-family: 'CustomFont', sans-serif;
   font-size: 24px;
-
+-webkit-text-stroke: .3px black; /* added to make letters more readable*/
 }
 
 @media (max-width: 768px) {/*makes the font size smaller based on what the window size is */
@@ -32,7 +32,7 @@ body {
 
 nav {/* nav bar*/
   background-color: black;
-  color: #fff;
+  color: black;
   opacity: 80%;
   border: 1px solid white;
 
@@ -100,7 +100,7 @@ a:hover {
   grid-template-columns: repeat(1, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.grid-container-buy{
+.grid-container-buy{ /* buy page grid*/
   display: grid;
   margin-top: 5px;
   grid-template-columns: repeat(1, 1fr);
@@ -112,7 +112,7 @@ a:hover {
   padding: 20px;
   
   text-align: center;
-  color: #fff;
+  color: white;
 
 }
 
@@ -151,7 +151,7 @@ a:hover {
   text-align: center;
   color: #fff;
 }
-.grid-buy{
+.grid-buy{/* buy page sub grid*/
   border: 1px solid white;
   padding: 20px;
  
@@ -164,12 +164,12 @@ a:hover {
   overflow: hidden;
 }
 
-.moving-text {
+.moving-text {/* how long anf far the text moves*/
   animation: moveText 8s linear infinite;
   white-space: nowrap;
 }
 
-@keyframes moveText {
+@keyframes moveText {/*moving text*/
   0% {
     transform: translateX(100%);
   }

@@ -37,9 +37,17 @@
     </div>
 
   </div>
-  <a href="ethan.html">
-    <img src="images/logo.png" class="watermark">
-  </a>
+  <img src="images/logo.png" class="watermark" id="color-trigger"  onclick="changeTextColor()">
+    
+      <script>
+        function changeTextColor() {
+          var body = document.body;
+          var currentColor = window.getComputedStyle(body).getPropertyValue('color');
+          var newColor = (currentColor === 'rgb(255, 255, 255)') ? 'cyan' : 'rgb(255, 255, 255)';
+          body.style.color = newColor;
+        }
+      </script>
+
 </body>
 
 </html>

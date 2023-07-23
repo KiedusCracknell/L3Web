@@ -19,8 +19,12 @@ body {
   font-size: 24px;
   -webkit-text-stroke: .3px black;
   /* added to make letters more readable*/
+  color: aqua;
 }
-
+.text-color-change {
+  /* Text color when class is applied */
+  color: red;
+}
 @media (max-width: 768px) {
   /*makes the font size smaller based on what the window size is */
   body {
@@ -128,7 +132,7 @@ a:hover {
   padding: 20px;
 
   text-align: center;
-  color: white;
+  
 
 }
 
@@ -139,7 +143,7 @@ a:hover {
   padding: 20px;
 
   text-align: center;
-  color: #fff;
+  
 
 
 }
@@ -151,7 +155,7 @@ a:hover {
   padding: 20px;
 
   text-align: center;
-  color: #fff;
+  
 
 
 }
@@ -162,7 +166,7 @@ a:hover {
   padding: 20px;
 
   text-align: center;
-  color: #fff;
+  
 }
 
 .grid-about {
@@ -172,7 +176,7 @@ a:hover {
 
 
   text-align: center;
-  color: #fff;
+  
 }
 
 .grid-buy {
@@ -181,7 +185,7 @@ a:hover {
   padding: 20px;
 
   text-align: center;
-  color: #fff;
+ 
 }
 
 
@@ -215,7 +219,7 @@ a:hover {
 }
 
 p {
-  font-size: auto, 20px;
+  font-size: auto, 20px; /**/
 }
 
 .product1 {
@@ -246,4 +250,8 @@ p {
   .watermark {
     max-width: 20%;
   }
+}
+.yellow-tint {
+  /* Yellow tint when class is applied */
+  background-color: rgba(255, 255, 0, 0.5);
 }

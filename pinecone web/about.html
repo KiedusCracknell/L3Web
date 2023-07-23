@@ -11,33 +11,45 @@
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li><!--links-->
+      <li><a href="index.html">Home</a></li>
+      <!--links-->
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <div class="grid-container-about"><!--main grid for page--> 
+  <div class="grid-container-about">
+    <!--main grid for page-->
     <div class="grid-about">
       <p>
         This page will tell you more about the whole website development and why certain design choices were made
       </p>
-      <p>Design: The design of this webiste is nature like, a way i tried to achhive this was with an AI generated nature backgroud to avoid copywright, i also made the nav bar 
+      <p>Design: The design of this webiste is nature like, a way i tried to achhive this was with an AI generated
+        nature backgroud to avoid copywright, i also made the nav bar
         hover option brown to fit with the theme more and oppos to green as it is much harder to read.
       </p>
       <p>
-        Development: I am the solo developer of this website, with a little help from courses online and prevoius expersince working on website for varoirs school
+        Development: I am the solo developer of this website, with a little help from courses online and prevoius
+        expersince working on website for varoirs school
         projects.
       </p>
       <p>
-        Insperation: A literal pinecone 
+        Insperation: A literal pinecone
       </p>
     </div>
-    
+
   </div>
-  <a href="ethan.html">
-  <img src="images/logo.png" class="watermark">
-  </a>
+  <img src="images/logo.png" class="watermark" id="color-trigger"  onclick="changeTextColor()">
+    
+      <script>
+        function changeTextColor() {
+          var body = document.body;
+          var currentColor = window.getComputedStyle(body).getPropertyValue('color');
+          var newColor = (currentColor === 'rgb(255, 255, 255)') ? 'cyan' : 'rgb(255, 255, 255)';
+          body.style.color = newColor;
+        }
+      </script>
+
 </body>
 
 </html>

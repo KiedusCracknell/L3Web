@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pinecone Products</title>
   <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
+  
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -28,19 +30,26 @@
         <!--the tetx that moves across the screen-->
       </div>
     </div>
-    <div class="grid-home">3</div>
+    <div class="grid-home">Click on the logo in the bottem right to change the text colour if it is hard to see white</div>
     <div class="grid-home">Pinecones contain carbon that was contained from the atmoshere by the tree, by burning it
     </div>
     <div class="grid-home">In this website you will be able to read and suppport the casue</div>
-    <div class="grid-home">6</div>
+    <div class="grid-home">Thank you for clciking and reading this website</div>
   </div>
-  <script src="script.js"></script>
+  
   <div class="watermark1">
 
-    <a href="ethan.html">
-      <img src="images/logo.png" class="watermark">
-    </a>
-
+    
+      <img src="images/logo.png" class="watermark" id="color-trigger"  onclick="changeTextColor()">
+    
+      <script>
+        function changeTextColor() {
+          var body = document.body;
+          var currentColor = window.getComputedStyle(body).getPropertyValue('color');
+          var newColor = (currentColor === 'rgb(255, 255, 255)') ? 'cyan' : 'rgb(255, 255, 255)';
+          body.style.color = newColor;
+        }
+      </script>
 
 </body>
 
